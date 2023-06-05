@@ -2,15 +2,9 @@ const containerEl = document.querySelector(".container");
 
 const btnRandom = document.querySelector(".random");
 
-btnRandom.addEventListener("click", () => {
-  setTimeout(() => {
-    generateColors();
-  }, 400);
-});
-
 // loop and create div and assign class `color-container`
 for (let index = 0; index < 50; index++) {
-  const colorContainer = document.createElement("div");
+  const colorContainer = document.createElement("button");
   colorContainer.classList.add("color-container");
   containerEl.appendChild(colorContainer);
 }
@@ -38,6 +32,28 @@ function randomColor() {
   }
   return colorCode;
 }
+
+colorContainerEls.forEach((item) => {
+  item.addEventListener("dblclick", function () {
+    const itemValue = item.innerHTML;
+    item.style.border = "7px solid ";
+    item.style.borderColor = "#2F58CD";
+    navigator.clipboard?.writeText && navigator.clipboard.writeText(itemValue);
+    var timeoutStart = setTimeout(() => {
+      alert("Copied:" + " " + itemValue);
+      if (item.style.border) {
+        item.style.border = "";
+      }
+    });
+  });
+});
+
+// Button random colors
+btnRandom.addEventListener("click", () => {
+  setTimeout(() => {
+    generateColors();
+  }, 400);
+});
 
 // change theme black or light
 function changeTheme() {
