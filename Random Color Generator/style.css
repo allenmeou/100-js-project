@@ -51,6 +51,9 @@ body {
   border-radius: 15px;
   color: white;
 }
+.theme .random {
+  background-color: rgb(76, 81, 152);
+}
 
 .theme-light {
   background-color: rgb(209, 205, 205);
@@ -84,4 +87,5 @@ h1 {
   border-radius: 15px;
   cursor: pointer;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }

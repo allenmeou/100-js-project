@@ -1,7 +1,15 @@
 const containerEl = document.querySelector(".container");
 
+const btnRandom = document.querySelector(".random");
+
+btnRandom.addEventListener("click", () => {
+  setTimeout(() => {
+    generateColors();
+  }, 400);
+});
+
 // loop and create div and assign class `color-container`
-for (let index = 0; index < 30; index++) {
+for (let index = 0; index < 50; index++) {
   const colorContainer = document.createElement("div");
   colorContainer.classList.add("color-container");
   containerEl.appendChild(colorContainer);
@@ -34,7 +42,7 @@ function randomColor() {
 // change theme black or light
 function changeTheme() {
   var el = document.body;
-  const btnTheme = document.querySelector("button");
+  const btnTheme = document.querySelector(".change-theme");
   el.classList.toggle("theme-dark");
   if (el.classList.contains("theme-dark")) {
     btnTheme.style.backgroundColor = "white";
