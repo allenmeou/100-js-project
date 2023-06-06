@@ -68,5 +68,6 @@ function changeTheme() {
     btnTheme.style.backgroundColor = "black";
     btnTheme.style.color = "white";
     btnTheme.innerText = "Dark mode";
+    
   }
 }
