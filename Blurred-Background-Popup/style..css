@@ -1,0 +1,143 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  background-image: url("https://w.wallhaven.cc/full/kx/wallhaven-kxkgdd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  transition: filter 0.7s;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 40px 0;
+}
+
+.btn {
+  background-color: orange;
+  color: black;
+  width: 200px;
+  height: 43px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: orangered;
+}
+.active.container {
+  filter: blur(5px) brightness(0.7);
+}
+.popup-container {
+  position: fixed;
+  display: flex;
+  top: 30%;
+  transform: translateX(-50%);
+  left: 50%;
+  flex-direction: column;
+  width: 440px;
+  height: 240px;
+  padding: 20px;
+  background: url("https://w.wallhaven.cc/full/l3/wallhaven-l3wqpp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 0.7s;
+}
+h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+label {
+  color: orangered;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+label i {
+  margin-right: 5px;
+}
+#input {
+  width: 400px;
+  height: 46px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 20x;
+  text-align: center;
+  margin: 10px 0;
+}
+.popup-btn {
+  width: 400px;
+  height: 46px;
+  background-color: orangered;
+  color: black;
+  border: 1px solid black;
+  font-size: 20x;
+  text-align: center;
+  margin: 10px 0;
+}
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+.close-icon:hover {
+  color: orangered;
+}
+
+.active.popup-container {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}
