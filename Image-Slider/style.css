@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: wheat;
+}
+.container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.image-container {
+  position: relative;
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  position: absolute;
+  color: white;
+  top: 50%;
+  font-size: 20px;
+  opacity: 0.7;
+  transform: translateY(-50%);
+}
+.icon-left {
+  margin: 0 15px;
+}
+.icon-right {
+  margin: 0 30px;
+}
+.btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
