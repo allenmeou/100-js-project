@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: green;
+  border-radius: 15px;
+}
+.heading {
+  font-size: 35px;
+  font-weight: 700;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+.joke {
+  margin: 40px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.btn {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  border-style: outset;
+  font-size: 18px;
+  border-width: 1.6px;
+  padding: 10px;
+  color: green;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+}
