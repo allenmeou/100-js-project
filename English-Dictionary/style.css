@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 506px;
+  padding: 28px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.heading {
+  font-size: 28px;
+  margin: 18px 0;
+}
+.input {
+  width: 80%;
+  height: 53px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  padding: 0 42px;
+  border-radius: 5px;
+}
+.info-text {
+  font-weight: 200;
+  margin: 20px 0 0 0;
+}
+.meaning-container {
+  display: none;
+  text-align: center;
+}
+p {
+  margin: 20px 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.meaning {
+  line-height: 1.5;
+}
