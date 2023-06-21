@@ -1,0 +1,68 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: salmon;
+}
+h2 {
+  font-size: 2rem;
+  color: aliceblue;
+  font-weight: 600;
+}
+.section {
+  text-align: center;
+  margin-top: 15px;
+}
+.btn {
+  padding: 15px;
+  font-size: 5rem;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 10px;
+  filter: grayscale();
+  transition: filter 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  filter: grayscale(0);
+}
+
+.emoji-name {
+  font-weight: 600;
+  color: darkblue;
+  margin: 16px 0;
+}
