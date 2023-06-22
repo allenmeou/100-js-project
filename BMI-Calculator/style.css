@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  background: linear-gradient(to left bottom, lightgreen, lightblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+}
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+.input {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+span {
+  margin: 5px 0;
+  letter-spacing: 3px;
+}
+.btn {
+  background-color: lightgreen;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.info-text {
+  letter-spacing: 3px;
+  margin: 20px 0;
+}

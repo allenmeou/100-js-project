@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="heading">Body Mass Index (BMI) Calculator</h1>
+      <span>Your Height (cm) :</span>
+      <input
+        type="number"
+        class="input"
+        id="height-input"
+        placeholder="Enter your height in cm"
+        value="180"
+      />
+      <span>Your Weight (kg) :</span>
+      <input
+        type="number"
+        class="input"
+        id="weight-input"
+        placeholder="Enter your weight in kg"
+        value="80"
+      />
+      <button class="btn">Compute BMI</button>
+      <input disabled type="number" name="" id="bmi-result" class="input" />
+      <h4 class="info-text">
+        Weight Condition : <span class="weight-condition"></span>
+      </h4>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
